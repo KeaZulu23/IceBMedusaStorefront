@@ -24,7 +24,7 @@ const PRODUCT_MODULE_ENABLED =
   process.env.FEATURE_PRODUCTMODULE_ENABLED || false
 
 // The API_BASE_URL is set in the .env file. It is the base URL of your Next.js app.
-const API_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "https://ice-b-medusa-store-62s5.vercel.app/" || "http://localhost:8000"
+const API_BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:8000"
 
 /**
  * Fetches a product by handle, using the Medusa API or the Medusa Product Module, depending on the feature flag.

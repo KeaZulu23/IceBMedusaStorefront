@@ -2,10 +2,10 @@ import Medusa from "@medusajs/medusa-js"
 import { QueryClient } from "@tanstack/react-query"
 
 // Defaults to standard port for Medusa server
-let MEDUSA_BACKEND_URL = "http://localhost:9000" || "https://icebmedusabackend-production.up.railway.app/store/products"
+let MEDUSA_BACKEND_URL = "http://localhost:9000"
 
 if (process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL) {
-  MEDUSA_BACKEND_URL = process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL || "https://icebmedusabackend-production.up.railway.app/store/products"
+  MEDUSA_BACKEND_URL = process.env.NEXT_PUBLIC_MEDUSA_BACKEND_URL
 }
 
 const queryClient = new QueryClient({
